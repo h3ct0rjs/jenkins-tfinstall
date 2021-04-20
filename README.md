@@ -14,7 +14,7 @@ The folder architecture is the _following_ :
 
 ## Configurations: 
 
-You can experiment with this terraform, I was drunk so the code don't implement tf standards, you should check the file with name **variables.tf**, and set  _home_ip_, change the code as it's presented below: 
+You can experiment with this terraform, The code don't implement tf standards, you should check the file with name **variables.tf**, and set  _home_ip_, change the code as it's presented below: 
 
 ```tf
 variable "home_ip" {
