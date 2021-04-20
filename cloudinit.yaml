@@ -1,0 +1,6 @@
+#cloud-config
+package_update: true
+packages:
+  - docker.io
+runcmd:
+  - docker run -d --name jenkinslab --publish 8080:8080 --volume jenkinslab_home:/var/jenkins_home jenkins/jenkins:lts
