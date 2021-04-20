@@ -4,3 +4,4 @@ packages:
   - docker.io
 runcmd:
   - docker run -d --name jenkinslab --publish 8080:8080 --volume jenkinslab_home:/var/jenkins_home jenkins/jenkins:lts
+  - docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest 
